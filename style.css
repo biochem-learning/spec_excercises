@@ -1,0 +1,46 @@
+* {
+  border: 1px solid red;
+}
+
+html, body{
+  height: 100%; 
+}
+
+#content-section{
+  height: 90% !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+}
+
+#draw-canvas{
+  width: 30%;
+  height: 80%;
+}
+
+#spec-canvas-section{
+  display: flex;
+  width: 60%;
+  height: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+}
+
+#spec-canvas{
+  width: 95%;
+  height: 85%;
+}
+
+#options {
+  display: flex;
+  width: 95%;
+  justify-content: space-around;
+}
+
+button {
+  width: 49%;
+}
+
+
