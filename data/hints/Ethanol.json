@@ -1,0 +1,42 @@
+{
+    "name": "Ethanol",
+    "description": "Ethanol is a good example for us to begin with. The spectra are relatively simple but will help us to begin figuring out how to organize the data and think about how to piece the structure together.",
+    "specName": "Ethanol",
+    "spectra_info": {
+        "MS": {
+            "general_description": "A good practice for determining a structure from its spectra is to begin with the Mass Spectrum. We want to determine the molecular weight from the MS and use this along with clues from other spectra to determine the molecular formula of the compound. The molecular formula will allow us to calculate the IHD which will help us figure out if the structure has any rings or multiple bonds.",
+            "peaks": [
+                { "x": 31, "description": "This signal is from the molecule fragmenting by losing the CH3 group." },
+                { "x": 45, "description": "This signal is from the molecule fragmenting by simply losing one hydrogen atom from the carbon next to the OH." },
+                { "x": 46, "description": "This is the molecular ion signal which shows that the molecular weight of this compound is 46. How do we know the molecular weight is 46 and not 45? We know that it is normal to see a very small peak (called the M+1 peak) with a mass one greater than the molecular weight due to isotopes of carbon and hydrogen. Since the M+1 peak should be very small, we know that the signal at 45 can't be for the molecular weight because the peak at 46 is too large to be from isotopes. So 46 must be the molecular ion peak and 45 must be from loss of a hydrogen." },
+                { "x": 47, "description": "This is the M+1 peak. It is present because some molecules will contain an isotope of carbon with a mass of 13 instead of a mass of 12 or a hydrogen with a mass of 2 instead of a mass of 1." }
+            ]
+        },
+        "IR": {
+            "general_description": "The primary feature of this IR spectrum that can help us determine the structure of the compound is the intense, broad signal at about 3400 wavenumbers. This signal is from the stretching vibration of the O-H single bond. We can also see sp3 C-H stretching just below 3000 cm-1 and C-O stretching at about 1100 cm-1. Mouse over the spectrum to see the connection of the signals to the bonds in the molecule.",
+            "peaks": [
+                { "x": "3320", "description": "This very broad peak centered around 3320 1/cm is typical of the alcohol functional group. Click on the \"Click for Fragment Table\" and add on OH group to the Fragment Space." },
+                { "x": "2970", "description": "These signals just below 3000 1/cm are representative of the sp3 C-H stretching vibrations." },
+                { "x": "2925", "description": "These signals just below 3000 1/cm are representative of the sp3 C-H stretching vibrations." },
+                { "x": "2870", "description": "These signals just below 3000 1/cm are representative of the sp3 C-H stretching vibrations." },
+                { "x": "1090", "description": "Strong signals between 1000 and 1300 1/cm are often indications of the presence of a C-O single bond. Since these are in the fingerprint region it is wise to be careful about making this assignment. Always confirm this using other spectra. In this case the C-O is from an alcohol functional group and the O-H signal at 3320 is sufficient confirmation." },
+                { "x": "1045", "description": "Strong signals between 1000 and 1300 1/cm are often indications of the presence of a C-O single bond. Since these are in the fingerprint region it is wise to be careful about making this assignment. Always confirm this using other spectra. In this case the C-O is from an alcohol functional group and the O-H signal at 3320 is sufficient confirmation." }
+            ]
+        },
+        "HNMR": {
+            "general_description": "This HNMR spectrum provides a lot of information about the structure of the molecule. We interpret the signals like this: There is a signal at about 3.4 ppm that is a quartet with a relative integration of 2 hydrogens. Lets break down all of the information in this peak. First the chemical shift. Signals in this general region of the spectrum tend to be due to hydrogens bonded to carbons next to oxygens (O-C-H). The integration tells us that there are two hydrogens in this group so it is probably a CH2. Finally, the quartet of peaks tells us the neighboring carbon has 3 hydrogens bonded to it. All together this tells us the molecule contains an O-CH2-CH3 piece. Click to display the fragment table then click on this piece. Similarly, the signal at about 1.1 ppm tells us there is a CH3 (integration of 3H) next to a CH2 (three peaks in the signal). This fits with the signal at about 3.4 ppm.",
+            "peaks": [
+                { "x": "3.5", "description": "The signal at 3.5 ppm has an integration of 2H. It provides much useful information for determining the structure. The 2H integration suggest a carbon atom with 2 hydrogens, CH2. The signal is a quartet. Zoom in by clicking and dragging horizontally if you can't see this. Unzoom by double clicking. The quartet indicates the neighboring carbon has 3 hydrogens on it. Finally, the chemical shift is in a range common for hydrogens next to oxygens. From this information alone we can determine a piece of the molecule is O-CH2-CH3. Select that piece from the Fragment Table." },
+                { "x": "2.9", "description": "The signal at 2.9 ppm has an integration of 1H. It is a singlet. This is from the OH group. The OH hydrogen doesn't participate in splitting. Select the OH from the Fragment Table." },
+                { "x": "1.2", "description": "The signal at 1.2 ppm has an integration of 3H and is a triplet. It is part of the ethyl group along with the signal at 3.5 ppm." }
+            ]
+        },
+        "CNMR": {
+            "general_description": "The CNMR spectrum confirms the presence of 2 carbon atoms. Because one of the signals is shifted downfield (higher ppm), we can tell that it is likely bonded to an oxygen.",
+            "peaks": [
+                { "x": "18.135", "description": "This signal is from the carbon of the methyl group." },
+                { "x": "57.874", "description": "This signal is from the carbon of the CH2. It is at a higher chemical shift because it is next to the oxygen atom." }
+            ]
+        }
+    }
+}

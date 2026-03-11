@@ -1,0 +1,36 @@
+##TITLE=3-Pentanone  $$Beginning of link block
+##JCAMP-DX= 4.24
+##DATA TYPE=LINK
+##ORIGIN= DePauw University
+##OWNER=Jeff Hansen
+##BLOCKS=3
+##TITLE=3-Pentanone $$Beginning of structure block
+##JCAMP-CS=3.7 $$ChemDoodle Version 8.0.1
+##DATA TYPE=STRUCTURE
+##ORIGIN=DePauw University
+##OWNER=Jeff Hansen
+##BLOCK ID=1
+##CROSS REFERENCE=IR PEAK ASSIGNMENTS: BLOCK ID=2
+
+##END= $$ End of structure block
+##TITLE=3-Pentanone $$Beginning of assignment block
+##JCAMP-DX=4.24
+##DATA TYPE=IR PEAK ASSIGNMENTS
+##ORIGIN= DePauw University
+##OWNER= Jeff Hansen
+##BLOCK ID=2
+##CROSS REFERENCE=STRUCTURE: BLOCK ID=1
+
+##END= $$End of assignment block
+##TITLE=3-Pentanone $$Beginning of data block
+##JCAMP-DX=4.24
+##DATA TYPE=IR SPECTRUM
+##ORIGIN= DePauw University
+OWNER= Jeff Hansen
+##BLOCK ID=3
+
+
+##END= $$Enod of data block
+
+
+##END= $$ End of link block

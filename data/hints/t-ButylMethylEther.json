@@ -1,0 +1,35 @@
+{
+    "name": "t-Butyl Methyl Ether",
+    "description": "While the structure of tert-buty methyl ether seems simple, there are a few tricky aspects to interpreting the spectra of this compound. One thing that is at once both a bit confusing and informative is the lack of any information from splitting in the HNMR. A good practice for determining a structure from its spectra is to begin with the Mass Spectrum. We want to determine the molecular weight from the MS and use this along with clues from other spectra to determine the molecular formulat of the compound. The molecular formula will allow us to calculate the IHD which will help us figure out if the structure has any rings or multiple bonds.",
+    "specName": "tBuMeEther",
+    "spectra_info": {
+        "MS": {
+            "general_description": "This compound fragments so easily that the molecular ion peak is not visible. The molecular weight is 88 and the peak at 73 is from fragmentation by losing one of the methyl groups from the t-butyl.",
+            "peaks": [
+                { "x": "73", "description": "This compound fragments so easily that the molecular ion peak is not visible. The molecular weight is 88 and the peak at 73 is from fragmentation by losing one of the methyl groups from the t-butyl." }
+            ]
+        },
+        "IR": {
+            "general_description": "There are few informative peaks in this spectrum. We can see that the typical sp3C-H stretching signals are present as is a C–O stretching signal. The relatively large peaks at 2350 1/cm is from residual carbon dioxide.",
+            "peaks": [
+                { "x": "2974", "description": "The peak at 2974 1/cm is due to sp3 C-H stretching vibrations. The other smaller peaks at slightly lower frequencies are also from this type of vibration." },
+                { "x": "1083", "description": "The peak at 1083 1/cm is due to C-O stretching vibrations." }
+            ]
+        },
+        "HNMR": {
+            "general_description": "Only two signals and both singlets? Not much to go on here, but it is enough. While not shown on the spectrum, the integration of the signal at about 3.2 ppm is 3H and the signal at about 1.2 ppm is 9H. The chemical shift of 3.2 ppm is indicative of being bonded to an oxygen so we can add an O–CH3 piece to the Fragment Space above. You can do so by clicking on the _Click For Fragment Table_ link, find an -)CH3 piece, and click it. The signal at 1.2 ppm has the chemical shift of a normal alkane signal so these nine hydrogens must not be directly next to the oxygen; they must be near only carbons. The only way to achieve this is with three methyl groups bonded to the same carbon: a t-butyl group. Add that to the Fragment Space too.",
+            "peaks": [
+                { "x": "1.155", "description": "This signal is from the t-butyl group hydrogens. Each of these is next to a carbon (in the middle of the t-butyl group) that has no hydrogens on it, which is why this signal is a singlet. Click on the t-butyl group in the fragment table to add that piece to the fragment space." },
+                { "x": "3.18", "description": "This signal is from the methyl group next to the oxygen. The oxygen is the cause of the higher chemical shift. Since the methyl group is not next to an atom with a hydrogen this signal is also a singlet. Click on the OCH3 group in the fragment table to add that piece to the fragment space." }
+            ]
+        },
+        "CNMR": {
+            "general_description": "The CNMR spectrum has three signals. (There is a group of three peaks at about 77 ppm that is from the solvent.) Two carbon atoms are bonded to oxygen which makes their chemical shifts higher: about 72 ppm and about 50 ppm. The higher one is from the t-butyl middle carbon. We know this in part because it is small. Carbon atoms with no hydrogen attached produce smaller signals and this is the smallest signal of the three. The remaining signal, at about 27ppm, is from the three methyls that are part of the t-butyl. It is so large because it has hydrogens attached and there are three carbons contributing to the signal compared to just one for the signals at 50 and 72 ppm.",
+            "peaks": [
+                { "x": "27.027", "description": "This signal at 27 ppm is from the methyl groups of the t-butyl. They are farthest from the oxygen so have the lowest chemical shift." },
+                { "x": "49.518", "description": "This signal at 49.5 ppm is from the O-CH3 carbon. The oxygen causes the chemical shift to be higher than a normal alkane." },
+                { "x": "72.843", "description": "This signal at about 73 ppm is from the t-butyl central carbon. The oxygen shifts the signal higher. It is higher than the OCH3 signal because it is more substituted." }
+            ]
+        }
+    }
+}

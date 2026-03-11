@@ -5,21 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./libs/ChemDoodleWeb.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/409dbfc954.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>Spectroscopic Idendifying Excercises</header>
-    <div>navbar</div>
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="144" height="144" fill="currentColor"
+            class="mol-check icon bi bi-emoji-dizzy-fill" id="icon-wrong" viewBox="0 0 16 16">
+            <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM4.146 5.146a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 1 1 .708.708l-.647.646.647.646a.5.5 0 1 1-.708.708L5.5 7.207l-.646.647a.5.5 0 1 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 0-.708zm5 0a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708.708l-.647.646.647.646a.5.5 0 0 1-.708.708l-.646-.647-.646.647a.5.5 0 1 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 0-.708zM8 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="144" height="144" fill="currentColor"
+            class="mol-check icon bi bi-emoji-sunglasses-fill" id="icon-correct" viewBox="0 0 16 16">
+            <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM2.31 5.243A1 1 0 0 1 3.28 4H6a1 1 0 0 1 1 1v.116A4.22 4.22 0 0 1 8 5c.35 0 .69.04 1 .116V5a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97 1.243l-.311 1.242A2 2 0 0 1 11.439 8H11a2 2 0 0 1-1.994-1.839A2.99 2.99 0 0 0 8 6c-.393 0-.74.064-1.006.161A2 2 0 0 1 5 8h-.438a2 2 0 0 1-1.94-1.515L2.31 5.243zM4.969 9.75A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .866-.5z" />
+        </svg>
+        <h1 class="mol-check alert">Correct!</h1>
+    </div>
+    <header>SPECTROSCOPIC IDENTIFYING EXCERCISES</header>
+    <div id="navbar">
+        <div class="nav-bar-section" id="dropdown-navbar">
+            <div id="compounds">Compounds</div> 
+        </div>
+        <div class="nav-bar-section" id="MS">Mass Spectrum</div>
+        <div class="nav-bar-section" id="IR">Infrared</div>
+        <div class="nav-bar-section" id="HNMR">HNMR</div>
+        <div class="nav-bar-section" id="CNMR">CNMR</div>
+    </div>
     <div id="content-section" style="height: 100%">
-        <canvas id="draw-canvas">Drawing Canvas</canvas>
-        <div id="spec-canvas-section">
-            <canvas id="spec-canvas">Spec Canvas</canvas>
+        <div id="draw-section">
+            <canvas id="draw-canvas">Drawing Canvas</canvas>
+        </div>
+        <div id="spec-section">
+            <div id="main-content-section">
+                <div id="spec-div"><canvas id="sample_spectrum">Spec Canvas</canvas></div>
+                <div id="right-section">
+                    <div id="mol-div" style="background-color: white"><canvas id="sample_molecule">Mol Canvas</canvas></div>
+                    <div id="hint-section">
+                        <div id="hint-title">Hint </div>
+                        <div id="hint-content"></div>
+                    </div>
+                </div>
+            </div>
             <div id="options">
-                <button> Hint</button>
-                <button> Show Answer</button>
+                <button id="hint-btn"> Hint</button>
+                <button id="answ-btn"> Show Answer</button>
             </div>
         </div>
     </div>
 
+    <script type="text/javascript" src="libs/RDKit_minimal.js"></script>
+    <script type="text/javascript" src="libs/ChemDoodleWeb.js"></script>
+    <script type="text/javascript" src="libs/ChemDoodleWeb-uis.js"></script>
+    <script src="src/utils.js"></script>
     <script src="src/main.js"></script>
 
     <!-- Can add a section for multiple choice, fill in the blank, or short paragraph type of question -->

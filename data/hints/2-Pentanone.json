@@ -1,0 +1,14 @@
+{
+    "name": "2-Pentanone",
+    "hints": {
+        "1": {
+            "general_description": "What is the molecular weight of 2-pentanone?"
+        },
+        "2": {
+            "general_description": "We see what we expect in this spectrum. The most prominent signal is for the carbonyl group of the ketone at about 1713 1/cm."
+        },
+        "3": {
+            "general_description": "The methyl group next to the ketone is readily identifiable as a singlet at about 2.1 ppm. The propryl group makes a pattern you should become familiar with. The first CH2 signal (integration of 2) is a triplet because it has 2 neighbors. The second CH2 signal (integration of 2) has six peaks because it has 5 neighbors, 2 on one side and 3 on the other. Finally, the methyl group signal at 0.85 ppm (integration of 3) is also a triplet (2 neighbors)."
+        }
+    }
+}

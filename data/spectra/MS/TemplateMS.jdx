@@ -1,0 +1,68 @@
+##TITLE=Template  $$Beginning of link block
+##JCAMP-DX= 4.24
+##DATA TYPE=LINK
+##ORIGIN= DePauw University
+##OWNER=Jeff Hansen
+##BLOCKS=3
+##TITLE=Template $$Beginning of structure block
+##JCAMP-CS=3.7 $$ChemDoodle Version 8.0.1
+##DATA TYPE=STRUCTURE
+##ORIGIN=DePauw University
+##OWNER=Jeff Hansen
+##BLOCK ID=1
+##CROSS REFERENCE=IR PEAK ASSIGNMENTS: BLOCK ID=2
+##MOLFORM=C2 H6 O
+##ATOMLIST=
+ 
+##BONDLIST=
+
+##DATE=16/05/16
+##TIME=18:03:06
+##MAX_RASTER=792
+##XY_RASTER_FACTOR=10000
+##XY_RASTER=
+
+##END= $$ End of structure block
+##TITLE=Template $$Beginning of assignment block
+##JCAMP-DX=4.24
+##ORIGIN= DePauw University
+##OWNER= Jeff Hansen
+##BLOCK ID=2
+##CROSS REFERENCE=STRUCTURE: BLOCK ID=1
+##DATA TYPE=MS PEAK ASSIGNMENTS
+##DATA CLASS=ASSIGNMENTS
+##NPOINTS=4
+##XUNITS= M/Z
+##YUNITS= RELATIVE ABUNDANCE
+##PEAK ASSIGNMENTS=(XYMA)
+(31.0, 1, ,<5>)
+
+(45.0, 0.573, ,<1>)
+
+(46.0, 0.246, ,<1>)
+
+(47.0, 0.01, , <1>)
+
+##END= $$End of assignment block
+##TITLE=Template $$Beginning of data block
+##JCAMP-DX= 5.00
+##DATA TYPE= MASS SPECTRUM
+##DATA CLASS= PEAK TABLE
+##ORIGIN= peak data table from SDBS
+##SPECTROMETER/DATA SYSTEM= unknown
+##XUNITS= M/Z
+##YUNITS= RELATIVE ABUNDANCE
+##NPOINTS= 16
+##MAXY= 100
+##MINY= 0
+##$Unsaturation=0.0
+##$Molecular weight=46.068521
+##$Resolution=0.1
+##$Threshold=1.0E-5
+##$Monoisotopic mass=46.041864812
+##PEAK TABLE= (XY..XY)
+
+##END= $$End of data block
+
+
+##END= $$ End of link block

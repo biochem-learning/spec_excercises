@@ -1,0 +1,144 @@
+##TITLE=3-Pentanone  $$Beginning of link block
+##JCAMP-DX= 4.24
+##DATA TYPE=LINK
+##ORIGIN= DePauw University
+##OWNER=Jeff Hansen
+##BLOCKS=3
+##TITLE=3-Pentanone $$Beginning of structure block
+##JCAMP-CS=3.7 $$ChemDoodle Version 8.0.1
+##DATA TYPE=STRUCTURE
+##ORIGIN=DePauw University
+##OWNER=Jeff Hansen
+##BLOCK ID=1
+##CROSS REFERENCE=IR PEAK ASSIGNMENTS: BLOCK ID=2
+##MOLFORM=C2 H6 O
+##ATOMLIST=
+1 H 0
+2 C 3
+3 H 0
+4 H 0
+5 C 2
+6 C 0
+7 O 0
+8 C 2
+9 H 0
+10 H 0
+11 C 3
+12 H 0
+13 H 0
+14 H 0
+15 H 0
+16 H 0
+##BONDLIST=
+1 2 S
+2 3 S
+2 4 S
+2 5 S
+5 6 S
+6 7 D
+6 8 S
+8 9 S
+8 10 S
+8 11 S
+11 12 S
+11 13 S
+11 14 S
+5 15 S
+5 16 S
+##DATE=16/05/16
+##TIME=18:03:06
+##MAX_RASTER=792
+##XY_RASTER_FACTOR=10000
+##XY_RASTER=
+1 1220000 2420000 0 
+2 1420000 2420000 0 
+3 1420000 2220000 0 
+4 1420000 2620000 0 
+5 1620000 2420000 0 
+6 1820000 2420000 0 
+7 1820000 2220000 0 
+8 2020000 2420000 0 
+9 2020000 2220000 0 
+10 2020000 2620000 0 
+11 2220000 2420000 0 
+12 2220000 2220000 0 
+13 2420000 2420000 0 
+14 2220000 2620000 0 
+15 1620000 2220000 0 
+16 1620000 2620000 0 
+##END= $$ End of structure block
+##TITLE=3-Pentanone $$Beginning of assignment block
+##JCAMP-DX=4.24
+##ORIGIN= DePauw University
+##OWNER= Jeff Hansen
+##BLOCK ID=2
+##CROSS REFERENCE=STRUCTURE: BLOCK ID=1
+##DATA TYPE=MS PEAK ASSIGNMENTS
+##DATA CLASS=ASSIGNMENTS
+##NPOINTS=4
+##XUNITS= M/Z
+##YUNITS= RELATIVE ABUNDANCE
+##PEAK ASSIGNMENTS=(XYMA)
+(57.0, 1, ,<1>)
+(57.0, 1, ,<2>)
+(57.0, 1, ,<3>)
+(57.0, 1, ,<4>)
+(57.0, 1, ,<5>)
+(57.0, 1, ,<6>)
+(57.0, 1, ,<7>)
+(57.0, 1, ,<15>)
+(57.0, 1, ,<16>)
+(86.0, 0.21, ,<1>)
+(86.0, 0.21, ,<2>)
+(86.0, 0.21, ,<3>)
+(86.0, 0.21, ,<4>)
+(86.0, 0.21, ,<5>)
+(86.0, 0.21, ,<6>)
+(86.0, 0.21, ,<7>)
+(86.0, 0.21, ,<8>)
+(86.0, 0.21, ,<9>)
+(86.0, 0.21, ,<10>)
+(86.0, 0.21, ,<11>)
+(86.0, 0.21, ,<12>)
+(86.0, 0.21, ,<13>)
+(86.0, 0.21, ,<14>)
+(86.0, 0.21, ,<15>)
+(86.0, 0.21, ,<16>)
+##END= $$End of assignment block
+##TITLE=3-Pentanone $$Beginning of data block
+##JCAMP-DX= 5.00
+##DATA TYPE= MASS SPECTRUM
+##DATA CLASS= PEAK TABLE
+##ORIGIN= peak data table from SDBS
+##SPECTROMETER/DATA SYSTEM= unknown
+##XUNITS= M/Z
+##YUNITS= RELATIVE ABUNDANCE
+##NPOINTS= 16
+##MAXY= 100
+##MINY= 0
+##$Unsaturation=0.0
+##$Molecular weight=46.068521
+##$Resolution=0.1
+##$Threshold=1.0E-5
+##$Monoisotopic mass=46.041864812
+##PEAK TABLE= (XY..XY)
+      26.0       2.5
+      27.0      12.4
+      28.0       4.3
+      29.0      59.4
+      30.0       1.4
+      39.0       1.8
+      41.0       2.0
+      42.0       1.8
+      43.0       1.6
+      55.0       1.3
+      56.0       3.7
+      57.0     100.0
+      58.0       3.4
+      86.0      21.2
+      87.0       1.2
+
+##END= $$End of data block
+
+
+##END= $$ End of link block

@@ -1,13 +1,45 @@
+:root {
+    --header-color: #575f6d;
+    --nav-bar-color: #424b5a;
+    --background-color: #2d3748;
+    --font: "Nunito", sans-serif;
+    --font-color: aliceblue;
+    --text-button-color: black;
+    --border-setting: solid 1px black;
+    --border-radius: 10px;
+}
+
 * {
-  border: 1px solid red;
+  font-family: var(--font);
+  color: var(--font-color);
 }
 
 html, body{
+  background-color: var(--background-color);
   height: 100%; 
+  margin: 0;
+}
+
+header {
+  background-color: var(--header-color);
+  height: 7%;
+  font-weight:900;
+  font-size:1.3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+}
+
+#navbar{
+  border-top: var(--border-setting);
+  border-bottom: var(--border-setting);
+  background-color: var(--nav-bar-color);
+  height: 5%;
 }
 
 #content-section{
-  height: 90% !important;
+  height: 88% !important;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -15,11 +47,15 @@ html, body{
 }
 
 #draw-canvas{
-  width: 30%;
-  height: 80%;
+  border: var(--border-setting);
+  border-radius: var(--border-radius);
+  /* width: 30%;
+  height: 80%; */
 }
 
-#spec-canvas-section{
+#spec-section{
+  border: var(--border-setting);
+  border-radius: var(--border-radius);
   display: flex;
   width: 60%;
   height: 80%;
@@ -28,19 +64,193 @@ html, body{
   justify-content:space-around;
 }
 
-#spec-canvas{
-  width: 95%;
-  height: 85%;
+#spec-div{
+  border: var(--border-setting);
+  border-radius: var(--border-radius);
+  /* background-color: aliceblue; */
+  width: 67%;
+  height: 95%;
+  overflow: hidden;
 }
 
 #options {
   display: flex;
-  width: 95%;
+  width: 100%;
+  height: 6%;
   justify-content: space-around;
 }
 
 button {
   width: 49%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  color: var(--text-button-color);
+}
+
+#content-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#right-section {
+  border: var(--border-setting);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+  height: 95%;
+}
+
+#main-content-section {
+  width: 100%;
+  height: 94% !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+}
+
+#mol-div {
+  border: var(--border-setting);
+  border-radius: var(--border-radius);
+  /* background-color: aliceblue; */
+  width: 90%;
+  height: 30%;
+  overflow: hidden;
+}
+
+#hint-section{
+  border: var(--border-setting);
+  border-radius: var(--border-radius);
+  width: 86%;
+  height: 63%;
+  padding: 2%;
+}
+
+#hint-title {
+  text-align: center;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar-section {
+  width: 10%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.dropdown:hover, .nav-bar-section:hover {
+    background-color: var(--header-color);
+    cursor: pointer;
+    color: #6193eb;
+}
+
+#draw-section {
+  border: var(--border-setting);
+  border-radius: var(--border-radius);
+  width: 30%;
+  height: 80%;
 }
 
 
+.submenu {
+    position:absolute;
+    list-style-type: none;
+    left: 410px;
+    top: 110px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+#dropdown-navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    border-radius: var(--border-radius);
+    z-index: 10;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: var(--border-radius);
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+#dropdown-navbar:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+#dropdown-navbar:hover .dropbtn {background-color: #3e8e41;}
+
+#sample_molecule {
+  display: none;
+}
+
+.icon {
+  position: absolute;
+  visibility: hidden;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 30%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 100%;
+  background-color: rgba(128, 128, 128, 0.8);
+}
+
+.alert {
+  visibility: hidden;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 55%;
+  margin: auto;
+  text-align: center;
+  color: var(--header-color);
+}
+
+.icon.active,
+.alert.active {
+  visibility: visible;
+}
+
+#icon-wrong {
+  fill: red;
+}
+
+#icon-correct {
+  fill: greenyellow;
+}

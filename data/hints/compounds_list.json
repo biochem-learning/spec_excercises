@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Ethanol",
+    "specName": "Ethanol",
+    "file": "data/Spectra/SpecDescription/Ethanol.json"
+  },
+  {
+    "name": "t-Butyl Methyl Ether",
+    "specName": "tBuMeEther",
+    "file": "data/Spectra/SpecDescription/t-ButylMethylEther.json"
+  },
+  {
+    "name": "3-Pentanone",
+    "specName": "3-Pentanone",
+    "file": "data/Spectra/SpecDescription/3-Pentanone.json"
+  },
+  {
+    "name": "2-Pentanone",
+    "specName": "2-Pentanone",
+    "file": "data/Spectra/SpecDescription/2-Pentanone.json"
+  }
+]
