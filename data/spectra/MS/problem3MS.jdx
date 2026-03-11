@@ -1,4 +1,4 @@
-##TITLE=3-Pentanone  $$Beginning of link block
+##TITLE= Problem 3 $$Beginning of link block 3-Pentanone
 ##JCAMP-DX= 4.24
 ##DATA TYPE=LINK
 ##ORIGIN= DePauw University
@@ -67,7 +67,7 @@
 15 1620000 2220000 0 
 16 1620000 2620000 0 
 ##END= $$ End of structure block
-##TITLE=3-Pentanone $$Beginning of assignment block
+##TITLE=Problem 3 $$Beginning of assignment block
 ##JCAMP-DX=4.24
 ##ORIGIN= DePauw University
 ##OWNER= Jeff Hansen

@@ -10,7 +10,7 @@ const SPEC_CANVAS_ID = "sample_spectrum";
 
 const HINT_TEXTBOX =  document.querySelector("#hint-content"); 
 
-let displayingMol = "Ethanol"
+let displayingMol = "problem1"
 let viewingMode = "MS"
 
 let spectraCache = {};
@@ -106,6 +106,11 @@ async function setUpCanvas(path='', molCanvasId, specCanvasId, molWidthPercent, 
         percentage("#" + specCanvasId, specWidthPercent, "width"), 
         percentage("#" + specCanvasId, specHeightPercent, "height"),
     )
+
+    canvas[1].spectrum.title = " "
+
+    console.log(canvas[1].spectrum.title)
+    canvas[1].repaint()
 
     console.log(canvas);
     return canvas;
