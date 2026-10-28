@@ -13,6 +13,13 @@ A web-based interactive spectroscopy exercise for identifying organic compounds 
 
 ![incorrect](public/demo/incorrect.png)
 
+## Local setup
+
+### Requirements
+
+- A modern web browser
+- Python 3 or another local HTTP server
+
 ### Running the project
 
 ```bash
