@@ -12,3 +12,23 @@ A web-based interactive spectroscopy exercise for identifying organic compounds 
 ![correct](public/demo/correct.png)
 
 ![incorrect](public/demo/incorrect.png)
+
+### Running the project
+
+```bash
+git clone https://github.com/biochem-learning/spec_excercises.git
+cd spectrum-app-v2
+python3 -m http.server 8000
+```
+
+On Windows, use:
+
+```powershell
+py -m http.server 8000
+```
+
+Open the applications in your browser: <http://localhost:8000>
+
+## Acknoledgement
+
+This project uses a modified version of [ChemDoodle Web Components](https://web.chemdoodle.com/) by iChemLabs, licensed under GPLv3.
