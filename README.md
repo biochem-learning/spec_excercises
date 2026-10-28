@@ -1,5 +1,7 @@
 # Spectroscopic Identifying Exercise App
 
+!!! Warning: Update ChemDoodle library is NOT recommended: The current library has been modified
+
 A web-based interactive spectroscopy exercise for identifying organic compounds from MS, IR, HNMR, and C NMR data, with progressive hints, a fragment-based structure builder, and answer feedback.
 
 ![demo_1](public/demo/demo_1.png)
