@@ -1,1 +1,11 @@
-# spec_excercises
+# Spectroscopic Identifying Exercise App
+
+A web-based interactive spectroscopy exercise for identifying organic compounds from MS, IR, HNMR, and C NMR data, with progressive hints, a fragment-based structure builder, and answer feedback.
+
+![demo_1](public/demo/demo_1.png)
+
+![demo_2](public/demo/demo_2.png)
+
+![correct](public/demo/correct.png)
+
+![incorrect](public/demo/incorrect.png)

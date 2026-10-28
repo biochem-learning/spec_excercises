@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/png" href="public/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./libs/ChemDoodleWeb.css" type="text/css">
 
@@ -26,7 +27,10 @@
         </svg>
         <h1 class="mol-check alert">Correct!</h1>
     </div>
-    <header>SPECTROSCOPIC IDENTIFYING EXERCISES</header>
+    <header>
+        <div class="header-logo"><img src="public/depauw-logo-cropped.png" alt="DePauw University Chemistry and Biochemistry"></div>
+        <span class="header-title">SPECTROSCOPIC IDENTIFYING EXERCISES</span>
+    </header>
     <div id="navbar">
         <div class="nav-bar-section" id="dropdown-navbar">
             <div id="compounds">Problems</div> 
@@ -38,7 +42,20 @@
     </div>
     <div id="content-section" style="height: 100%">
         <div id="draw-section">
-            <canvas id="draw-canvas">Drawing Canvas</canvas>
+            <div class="u-s-header">
+                <span class="u-s-name">Fragment Space</span>
+                <button type="button" class="frag-table-button" aria-expanded="false" aria-controls="fragment-table">Open Fragment Table</button>
+            </div>
+            <div class="fragment-controls" role="toolbar" aria-label="Fragment controls">
+                <button type="button" id="del-frag-button" aria-pressed="false" disabled>Delete</button>
+                <button type="button" id="undo-frag-button" disabled>Undo</button>
+                <button type="button" id="clear-frag-button" disabled>Clear</button>
+            </div>
+            <div id="frag-canvas"><canvas id="draw-canvas" tabindex="0" aria-label="Fragment drawing canvas"></canvas></div>
+            <p id="fragment-status" role="status">Loading fragments…</p>
+            <div class="frag-table" id="fragment-table">
+                <div class="f-t-general-instr">Click a fragment to add it to the Fragment Space</div>
+            </div>
         </div>
         <div id="spec-section">
             <div id="main-content-section">
@@ -53,7 +70,8 @@
             </div>
             <div id="options">
                 <button id="hint-btn"> Hint</button>
-                <button id="answ-btn"> Show Answer</button>
+                <button id="answ-btn"> Check Answer</button>
+                <button id="show-answer-btn"> Show Answer</button>
             </div>
         </div>
     </div>
